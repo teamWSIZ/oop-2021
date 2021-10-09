@@ -1,7 +1,7 @@
 ## Specyfikacja dla systemu (klas) awiacji
 
 ### Model
-Interesuj nas aktorzy typu: 
+Interesują nas aktorzy typu: 
 
 - Airplane
 - Pilot
