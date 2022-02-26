@@ -1,11 +1,7 @@
 import datetime
-import time
-from math import sin
 from random import randint
 
 from cachetools import cached, TTLCache
-
-from p1.decorators import profile
 
 
 @cached(cache=TTLCache(maxsize=1024, ttl=10))

@@ -45,6 +45,8 @@ async def accept_file(req: BaseRequest):
     """
     # https://docs.aiohttp.org/en/stable/web_quickstart.html#file-uploads
     print('file upload request hit...')
+    token = req.rel_url.query.get('token', '')
+    print(f'token={token}')
     reader = await req.multipart()
 
     # field = await reader.next()

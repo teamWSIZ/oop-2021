@@ -64,5 +64,5 @@ async def main_foo():
     await sleep(2)
     log(f'main -- done after {ts() - st:.3f}s')
 
-
-asyncio.run(main_foo())
+if __name__ == '__main__':
+    asyncio.run(main_foo())

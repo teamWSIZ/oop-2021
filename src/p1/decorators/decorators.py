@@ -17,9 +17,7 @@ def best_profile(arg, age):
             print(f'ok, arg={arg}, age={age}')
             ret = fn(*args, *kw)
             return ret
-
         return wrapper
-
     return decorator
 
 

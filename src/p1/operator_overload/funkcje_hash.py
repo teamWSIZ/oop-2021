@@ -1,10 +1,8 @@
-
-
 class G:
     a: int
     b: str
 
-    def __init__(self, a:int, b:str) -> None:
+    def __init__(self, a: int, b: str) -> None:
         self.a = a
         self.b = b
 
@@ -12,9 +10,15 @@ class G:
         return (self.a, self.b).__hash__()
 
 
-x = (1,'abc')
-y = (2,'abc')
-z = (1,'abz')
+g1 = G(1, 'a')
+g2 = G(2, 'a')
+
+s = set([g1, g2])
+print(len(s))
+
+x = (1, 'abc')
+y = (2, 'abc')
+z = (1, 'abz')
 print(x.__hash__())
 print(y.__hash__())
 print(z.__hash__())

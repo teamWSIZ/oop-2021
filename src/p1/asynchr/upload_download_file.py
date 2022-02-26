@@ -24,7 +24,8 @@ async def upload():
     # client upload to url
     session = aiohttp.ClientSession()
     files = {'file': open('eso1907a.jpg', 'rb')}
-    await session.post('http://localhost:8888/upload', data=files)
+    token = '123'
+    await session.post(f'http://localhost:8888/upload?token={token}', data=files)
     await session.close()
 
 
